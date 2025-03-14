@@ -1,36 +1,137 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Nail IB UI Project
 
-## Getting Started
+## 🚀 Project Overview
+This project is a responsive and interactive UI for Nail IB, designed using **Next.js, Tailwind CSS, and Vimeo for video playback**. It includes dynamic components such as a video player, interactive navigation, and custom fonts.
 
-First, run the development server:
+## 📌 Features
+- **Custom Branding**: Uses **IntegralCF** for headings and **Open Sans** for body text.
+- **Responsive Design**: Ensures smooth display on different screen sizes.
+- **Video Player**: Integrated with **Vimeo** for high-quality lesson playback.
+- **Optimized Performance**: Uses **Next.js Image Optimization** and `priority` loading.
+- **Favicon Support**: Custom site icon for brand recognition.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 📂 Folder Structure
+```
+📦 nailib-ui
+├── 📁 public         # Stores static assets (e.g., favicon.ico)
+├── 📁 src
+│   ├── 📁 components # Reusable UI components (Navbar, VideoPlayer, etc.)
+│   ├── 📁 pages      # Next.js pages (index.tsx, _app.tsx, etc.)
+│   ├── 📁 styles     # Global stylesheets
+│   ├── 📁 fonts      # Custom brand fonts
+├── 📄 README.md      # Documentation
+├── 📄 package.json   # Project dependencies
+└── 📄 next.config.js # Next.js configuration
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Branding & Fonts
+- **Headings:** `IntegralCF` (Bold & Regular)
+- **Body Text:** `Open Sans` (Bold & Regular)
+- **Font Integration:**
+  - Download fonts: [Google Drive Link](https://drive.google.com/drive/folders/1GEFQQnPtSZFFpXhGN4RReQo7h-6nrgVg)
+  - Import in **global.css**:
+    ```css
+    @font-face {
+      font-family: 'IntegralCF';
+      src: url('/fonts/IntegralCF-Bold.woff2') format('woff2');
+      font-weight: bold;
+    }
+    @font-face {
+      font-family: 'Open Sans';
+      src: url('/fonts/OpenSans-Regular.woff2') format('woff2');
+      font-weight: normal;
+    }
+    ```
+  - Use in components:
+    ```tsx
+    <h1 className="font-['IntegralCF'] text-4xl text-black">Ace Your IB Exams</h1>
+    ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🖼️ Favicon Setup
+1. **Convert Image to `favicon.ico`**
+   - Use an online tool like [Favicon.io](https://favicon.io/)
+2. **Place `favicon.ico` in `public/` folder**
+3. **Link in `_app.tsx` or `head` tag**:
+   ```tsx
+   import Head from 'next/head';
+   export default function App({ Component, pageProps }) {
+     return (
+       <>
+         <Head>
+           <link rel="icon" href="/favicon.ico" />
+         </Head>
+         <Component {...pageProps} />
+       </>
+     );
+   }
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📺 Video Player Implementation
+- **Using Next.js `<video>` tag**:
+  ```tsx
+  <video controls width="100%" src="https://cdn.nailib.com/sample-video.mp4"></video>
+  ```
+- **Using Vimeo Embed**:
+  ```tsx
+  <iframe src="https://player.vimeo.com/video/123456789" width="100%" height="500" frameborder="0" allowfullscreen></iframe>
+  ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## 💻 Installation & Setup
+1. Clone the repo:
+   ```bash
+   git clone https://github.com/yourusername/nailib-ui.git
+   cd nailib-ui
+   ```
+2. Install dependencies:
+   ```bash
+   npm install  # or yarn install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev  # or yarn dev
+   ```
+4. Open in browser: [http://localhost:3000](http://localhost:3000)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Technologies Used
+- **Next.js** – Server-side rendering and static site generation
+- **Tailwind CSS** – Utility-first styling
+- **Vimeo API** – High-quality video streaming
+- **Google Fonts** – Custom typography
+- **React Hooks** – State management and interactivity
+
+---
+
+## 🚀 Deployment
+- **Vercel:**
+  ```bash
+  vercel deploy
+  ```
+- **Netlify:**
+  ```bash
+  netlify deploy
+  ```
+
+---
+
+## 📌 Future Enhancements
+- Improve UI animations
+- Add dark mode
+- Implement AI-driven video recommendations
+
+---
+
+## 📞 Support & Contributions
+For issues and improvements, please open a GitHub issue or reach out via email. 🚀
+
