@@ -9,24 +9,7 @@ This project is a responsive and interactive UI for Nail IB, designed using **Ne
 - **Video Player**: Integrated with **Vimeo** for high-quality lesson playback.
 - **Optimized Performance**: Uses **Next.js Image Optimization** and `priority` loading.
 - **Favicon Support**: Custom site icon for brand recognition.
-
----
-
-## 📂 Folder Structure
-```
-📦 nailib-ui
-├── 📁 public         # Stores static assets (e.g., favicon.ico)
-├── 📁 src
-│   ├── 📁 components # Reusable UI components (Navbar, VideoPlayer, etc.)
-│   ├── 📁 pages      # Next.js pages (index.tsx, _app.tsx, etc.)
-│   ├── 📁 styles     # Global stylesheets
-│   ├── 📁 fonts      # Custom brand fonts
-├── 📄 README.md      # Documentation
-├── 📄 package.json   # Project dependencies
-└── 📄 next.config.js # Next.js configuration
-```
-
----
+-
 
 ## 🎨 Branding & Fonts
 - **Headings:** `IntegralCF` (Bold & Regular)
