@@ -3,6 +3,9 @@
 ## 🚀 Project Overview
 This project is a responsive and interactive UI for Nail IB, designed using **Next.js, Tailwind CSS, and Vimeo for video playback**. It includes dynamic components such as a video player, interactive navigation, and custom fonts.
 
+## View Project Here ##
+https://nail-ib.vercel.app/
+
 ## 📌 Features
 - **Custom Branding**: Uses **IntegralCF** for headings and **Open Sans** for body text.
 - **Responsive Design**: Ensures smooth display on different screen sizes.
@@ -81,7 +84,7 @@ This project is a responsive and interactive UI for Nail IB, designed using **Ne
    ```
 3. Run the development server:
    ```bash
-   npm run dev  # or yarn dev
+   npx next dev # or yarn dev
    ```
 4. Open in browser: [http://localhost:3000](http://localhost:3000)
 
@@ -100,10 +103,6 @@ This project is a responsive and interactive UI for Nail IB, designed using **Ne
 - **Vercel:**
   ```bash
   vercel deploy
-  ```
-- **Netlify:**
-  ```bash
-  netlify deploy
   ```
 
 ---
